@@ -431,6 +431,9 @@ input:-webkit-autofill:active {
   @media screen and (max-width: 360px) {
     grid-template-rows: 130px 1fr;
   }
+  @media screen and (min-width: 768px) {
+    grid-template-rows: 104px 1fr;
+  }
 
   @media screen and (min-width: 1024px) and (min-height: 650px) {
     padding: 0;
@@ -513,7 +516,7 @@ input:-webkit-autofill:active {
 .main-botoom-section {
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 24px;
   gap: 25px;
   @media screen and (min-width: 768px) {
     flex-direction: row;

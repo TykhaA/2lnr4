@@ -65,6 +65,34 @@ if (myChart) {
         legend: {
           display: false,
         },
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              let label = context.dataset.label || "";
+              if (context.parsed.y !== null) {
+                label += context.parsed.y + " Hours";
+              }
+              return label;
+            },
+          },
+          backgroundColor: "#fff",
+          titleColor: "#3d3b36",
+          titleFont: {
+            size: 10,
+            weight: "300",
+          },
+          bodyColor: "#282003",
+          bodyFont: {
+            size: 13,
+            weight: "bold",
+          },
+          borderColor: "#efece1",
+          borderWidth: 1,
+          caretSize: 5,
+          displayColors: false,
+          titleAlign: "center",
+          bodyAlign: "center",
+        },
       },
       fill: true,
       scales: {
@@ -122,6 +150,6 @@ function handleSettingOpen(e) {
 }
 
 const tabList = document.querySelectorAll(".tab-content .tab-pane");
-if (tabList) {
+if (tabList.length) {
   tabList[0].classList.add("show", "active");
 }

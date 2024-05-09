@@ -70,9 +70,7 @@
         font-size: 12px;
         width: 80%;
         padding-right: 24px;
-        // @media screen and (min-width: 768px) {
-        //   padding-right: 0px;
-        // }
+
         @media screen and (min-width: 768px) {
           padding-right: 0px;
         }
@@ -106,6 +104,9 @@
         display: none;
         @media screen and (min-width: 500px) {
           display: flex;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1000px) {
+          display: none;
         }
         .number {
           font-weight: 600;
