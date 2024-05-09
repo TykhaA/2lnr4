@@ -1,0 +1,35 @@
+.blog {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 16px;
+  border-radius: 24px;
+  background-color: $primaryBg;
+  @media screen and (min-width: 768px) {
+    width: 67%;
+    flex-direction: row;
+    padding: 26px 32px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    width: 60%;
+  }
+  .headline {
+    max-width: 385px;
+    font-size: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+      font-size: 20px;
+    }
+  }
+  .btn {
+    height: 44px;
+    margin-top: 24px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    line-height: 143%;
+  }
+}

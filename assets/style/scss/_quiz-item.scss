@@ -1,0 +1,43 @@
+.quiz-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: $headlineColor;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 72px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1800px) {
+    margin: auto;
+  }
+  &__image {
+    max-width: 464px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__title {
+    margin: 8px 0 12px;
+    font-size: 24px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  &__questions {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__count {
+    margin-left: 12px;
+  }
+  .btn {
+    margin-top: 24px;
+    padding: 14px 49px 15px;
+  }
+}

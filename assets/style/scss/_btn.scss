@@ -1,0 +1,30 @@
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  background-color: $corpColor;
+  border-radius: 8px;
+  text-align: center;
+  color: $corpColor120;
+  transition: all 0.3s;
+  &:disabled {
+    opacity: 0.4;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 4px 10px rgba(136, 136, 136, 0.5);
+    background-color: $corpColor;
+  }
+  &.btn_finished {
+    background-color: $success;
+    &:hover {
+      background-color: #0cbe3e !important;
+    }
+  }
+  &_unavailable {
+    background-color: #ebe8d9;
+    &:hover {
+      background-color: #edebe0 !important;
+    }
+  }
+}

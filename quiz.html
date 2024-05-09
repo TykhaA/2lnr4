@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/style/css/style.css" />
+  </head>
+  <body class="body sidebar-mini">
+    <header class="header">
+      <div class="greetings-block">
+        <h2 class="greetings-block__title">
+          Welcome Back, <span>Ashley</span>
+        </h2>
+        <span class="description"
+          >Continue your learning where you stopped!</span
+        >
+      </div>
+      <form action="" class="search">
+        <button type="submit" class="search__btn">
+          <svg width="24" height="24" class="icon">
+            <use href="assets/image/icons.svg#icon-search"></use>
+          </svg>
+        </button>
+        <input
+          class="search__input"
+          type="search"
+          autocomplete="off"
+          name="search"
+          value=""
+          placeholder="Search Courses, Categories"
+        />
+      </form>
+      <div class="header__logo">
+        <a class="logo" href="/" aria-label="logo">
+          <img
+            src="assets/image/2lrn4-logo.svg"
+            alt="logo"
+            width="140"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <button
+        class="btn-open js-btn-open"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="open menu"
+      >
+        <svg width="24" height="24" class="icon btn-open__arrow">
+          <use href="assets/image/icons.svg#icon-arrow"></use>
+        </svg>
+        <svg width="40" height="41" class="btn-open__burger">
+          <use href="assets/image/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="header-backdrop" id="mobile-menu"></div>
+    </header>
+    <aside class="sidebar js-sidebar">
+      <div class="user">
+        <div class="user__image">
+          <img
+            src="assets/image/user.webp"
+            alt="user image"
+            width="56"
+            height="56"
+            loading="lazy"
+          />
+        </div>
+        <div class="user__info user__info_close">
+          <span class="name">Michael Ashley</span>
+          <span class="email">MichaelAshley@gmail.com</span>
+        </div>
+      </div>
+      <ul class="sidebar__menu menu">
+        <li class="menu__item menu__item_active">
+          <a href="" class="menu__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-dashboard"></use>
+            </svg>
+            <span class="item">Dashboard</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="course-categories.html" class="menu__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-categories"></use>
+            </svg>
+            <span class="item">Course Categories</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-notifications"></use>
+            </svg>
+            <span class="item">Notifications</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-support"></use>
+            </svg>
+            <span class="item">Support</span>
+          </a>
+        </li>
+        <li class="menu__item dropdown-block show">
+          <button
+            class="language-select"
+            type="button"
+            id="language-chooser"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-language"></use>
+            </svg>
+            <span class="item">Language</span>
+            <span class="lang-selected">NL</span>
+          </button>
+          <div class="dropdown-menu-item" aria-labelledby="language-chooser">
+            <a class="dropdown-item" href="">EN </a>
+            <a class="dropdown-item selected" href="">NL</a>
+            <a class="dropdown-item" href="">DE</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="sidebar__menu menu settings">
+        <li class="menu__item settings__item open">
+          <a href="" class="menu__link settings__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-settings"></use>
+            </svg>
+            <span class="item">Settings</span>
+            <svg width="24" height="24" class="icon settings__arrow">
+              <use href="assets/image/icons.svg#icon-arrow"></use>
+            </svg>
+          </a>
+          <ul class="settings__list menu">
+            <li class="menu__item">
+              <a href="" class="menu__link">
+                <svg width="24" height="24" class="icon">
+                  <use href="assets/image/icons.svg#icon-changePassword"></use>
+                </svg>
+                <span class="item">Change Password</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">
+                <svg width="20" height="20" class="icon">
+                  <use href="assets/image/icons.svg#icon-logOut"></use>
+                </svg>
+                <span class="item logout">LogOut</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="section-back">
+        <a href="#" class="section-back__link"
+          ><svg width="8" height="14">
+            <use href="assets/image/icons.svg#icon-arrow-right"></use>
+          </svg>
+          Back</a
+        >
+      </div>
+      <section class="quiz-section">
+        <div class="quiz-item">
+          <div class="quiz-item__image">
+            <img
+              src="assets/image/quiz.webp"
+              alt="EXAM"
+              width="464"
+              height="456"
+              loading="lazy"
+              srcset="assets/image/quiz.webp 1x, assets/image/quiz@2x.webp 2x"
+            />
+          </div>
+          <div class="quiz-item__description">
+            <img
+              src="assets/image/question.webp"
+              alt="question icon"
+              width="64"
+              height="64"
+              loading="lazy"
+              srcset="
+                assets/image/question.webp    1x,
+                assets/image/question@2x.webp 2x
+              "
+            />
+            <h2 class="quiz-item__title">Phishing Challenge</h2>
+            <p class="quiz-item__description">
+              How well can you spot phishing emails?
+            </p>
+            <div class="quiz-item__questions">
+              <span>Total Questions:</span>
+              <span class="quiz-item__count">10</span>
+            </div>
+            <button class="btn" type="button">Start Quiz</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

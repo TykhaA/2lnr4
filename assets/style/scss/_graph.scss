@@ -1,0 +1,22 @@
+.graph {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid $border;
+  padding: 21px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  @media screen and (min-width: 768px) {
+    width: 46%;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    padding: 14px 10px;
+  }
+  &__description {
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  canvas {
+    margin-top: auto;
+  }
+}

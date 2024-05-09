@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: 1024px) and (min-height: 650px) {
+    gap: 40px;
+    overflow: auto;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    gap: 16px;
+  }
+}

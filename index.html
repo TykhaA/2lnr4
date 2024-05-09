@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/style/css/style.css" />
+  </head>
+  <body class="body sidebar-mini">
+    <header class="header">
+      <div class="greetings-block">
+        <h2 class="greetings-block__title">
+          Welcome Back, <span>Ashley</span>
+        </h2>
+        <span class="description"
+          >Continue your learning where you stopped!</span
+        >
+      </div>
+      <form action="" class="search">
+        <button type="submit" class="search__btn">
+          <svg width="24" height="24" class="icon">
+            <use href="assets/image/icons.svg#icon-search"></use>
+          </svg>
+        </button>
+        <input
+          class="search__input"
+          type="search"
+          autocomplete="off"
+          name="search"
+          value=""
+          placeholder="Search Courses, Categories"
+        />
+      </form>
+      <div class="header__logo">
+        <a class="logo" href="/" aria-label="logo">
+          <img
+            src="assets/image/2lrn4-logo.svg"
+            alt="logo"
+            width="140"
+            height="40"
+            loading="lazy"
+          />
+        </a>
+      </div>
+      <button
+        class="btn-open js-btn-open"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="open menu"
+      >
+        <svg width="24" height="24" class="icon btn-open__arrow">
+          <use href="assets/image/icons.svg#icon-arrow"></use>
+        </svg>
+        <svg width="40" height="41" class="btn-open__burger">
+          <use href="assets/image/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="header-backdrop" id="mobile-menu"></div>
+    </header>
+    <aside class="sidebar js-sidebar">
+      <div class="user">
+        <div class="user__image">
+          <img
+            src="assets/image/user.webp"
+            alt="user image"
+            width="56"
+            height="56"
+            loading="lazy"
+          />
+        </div>
+        <div class="user__info user__info_close">
+          <span class="name">Michael Ashley</span>
+          <span class="email">MichaelAshley@gmail.com</span>
+        </div>
+      </div>
+      <ul class="sidebar__menu menu">
+        <li class="menu__item menu__item_active">
+          <a href="" class="menu__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-dashboard"></use>
+            </svg>
+            <span class="item">Dashboard</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="course-categories.html" class="menu__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-categories"></use>
+            </svg>
+            <span class="item">Course Categories</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-notifications"></use>
+            </svg>
+            <span class="item">Notifications</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-support"></use>
+            </svg>
+            <span class="item">Support</span>
+          </a>
+        </li>
+        <li class="menu__item dropdown-block show">
+          <button
+            class="language-select"
+            type="button"
+            id="language-chooser"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-language"></use>
+            </svg>
+            <span class="item">Language</span>
+            <span class="lang-selected">NL</span>
+          </button>
+          <div class="dropdown-menu-item" aria-labelledby="language-chooser">
+            <a class="dropdown-item" href="">EN </a>
+            <a class="dropdown-item selected" href="">NL</a>
+            <a class="dropdown-item" href="">DE</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="sidebar__menu menu settings">
+        <li class="menu__item settings__item open">
+          <a href="" class="menu__link settings__link">
+            <svg width="24" height="24" class="icon">
+              <use href="assets/image/icons.svg#icon-settings"></use>
+            </svg>
+            <span class="item">Settings</span>
+            <svg width="24" height="24" class="icon settings__arrow">
+              <use href="assets/image/icons.svg#icon-arrow"></use>
+            </svg>
+          </a>
+          <ul class="settings__list menu">
+            <li class="menu__item">
+              <a href="" class="menu__link">
+                <svg width="24" height="24" class="icon">
+                  <use href="assets/image/icons.svg#icon-changePassword"></use>
+                </svg>
+                <span class="item">Change Password</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">
+                <svg width="20" height="20" class="icon">
+                  <use href="assets/image/icons.svg#icon-logOut"></use>
+                </svg>
+                <span class="item logout">LogOut</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <main class="main">
+      <section class="main-top-section">
+        <div class="blog">
+          <div class="blog__wrap">
+            <h1 class="headline">
+              Explore and learn from the&nbspbest and instant video courses
+            </h1>
+            <button class="btn" type="button">Find Courses</button>
+          </div>
+          <div class="blog__image">
+            <img
+              src="assets/image/blog.webp"
+              alt="MDN"
+              width="230"
+              height="208"
+              loading="lazy"
+              srcset="assets/image/blog.webp 1x, assets/image/blog@2x.webp 2x"
+            />
+          </div>
+        </div>
+        <div class="status-icons">
+          <div class="status-icons__item status-icons__item_completed">
+            <div class="title-block">
+              <svg width="32" height="32">
+                <use href="assets/image/icons.svg#icon-completed"></use>
+              </svg>
+              <span>Completed</span>
+            </div>
+            <span class="number">02</span>
+          </div>
+          <div class="status-icons__item status-icons__item_ongoing">
+            <div class="title-block">
+              <svg width="32" height="32">
+                <use href="assets/image/icons.svg#icon-ongoing"></use>
+              </svg>
+              <span>Ongoing</span>
+            </div>
+            <span class="number">04</span>
+          </div>
+          <div class="status-icons__item status-icons__item_progress">
+            <div class="title-block">
+              <svg width="32" height="32">
+                <use href="assets/image/icons.svg#icon-progress"></use>
+              </svg>
+              <span>Progress</span>
+            </div>
+            <span class="number">56%</span>
+          </div>
+          <div class="status-icons__item status-icons__item_badges">
+            <div class="title-block">
+              <svg width="32" height="32">
+                <use href="assets/image/icons.svg#icon-badges"></use>
+              </svg>
+              <span>Badges</span>
+            </div>
+            <span class="number">01</span>
+          </div>
+        </div>
+      </section>
+      <section class="ongoing-courses">
+        <h2 class="headline">Ongoing Courses</h2>
+        <div class="ongoing-courses__list swiper slider-block">
+          <div class="swiper-wrapper">
+            <div class="course-item swiper-slide">
+              <div class="course-item__image-block">
+                <img
+                  src="assets/image/course-item1.webp"
+                  alt="abstraction image"
+                  width="248"
+                  height="144"
+                  loading="lazy"
+                  srcset="
+                    assets/image/course-item1.webp    1x,
+                    assets/image/course-item1@2x.webp 2x
+                  "
+                />
+              </div>
+              <h3 class="course-item__title">Recognize Phishing Attack</h3>
+              <div class="wrapper">
+                <p class="course-item__description">
+                  Lorem ipsum dolor sit amet. Et cumque sunt aut repellat modi
+                  etaut repellat modi et
+                </p>
+                <div
+                  class="course-item__wrapper d-flex justify-content-between"
+                >
+                  <button
+                    class="btn"
+                    type="button"
+                    aria-label="Continue course"
+                  >
+                    Continue
+                  </button>
+                  <svg
+                    class="circle"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#e6e6e6"
+                      stroke-width="5"
+                    ></circle>
+                    <circle
+                      class="range"
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#fbd44b"
+                      stroke-width="5"
+                      stroke-dasharray="95, 1000"
+                      stroke-dashoffset="71.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="
+                        transform-origin: center;
+                        transform: rotate(-90deg);
+                      "
+                    ></circle>
+                    <text
+                      x="50%"
+                      y="50%"
+                      text-anchor="middle"
+                      dy="4"
+                      font-size="9"
+                      fill="#866a05"
+                      font-weight="400"
+                    >
+                      25%
+                    </text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="course-item swiper-slide">
+              <div class="course-item__image-block">
+                <img
+                  src="assets/image/course-item2.webp"
+                  alt="abstraction image"
+                  width="248"
+                  height="144"
+                  loading="lazy"
+                  srcset="
+                    assets/image/course-item2.webp    1x,
+                    assets/image/course-item2@2x.webp 2x
+                  "
+                />
+              </div>
+              <h3 class="course-item__title">Recognize Phishing Attack</h3>
+              <div class="wrapper">
+                <p class="course-item__description">
+                  Lorem ipsum dolor sit amet. Et cumque sunt aut repellat modi
+                  etaut repellat modi et
+                </p>
+                <div
+                  class="course-item__wrapper d-flex justify-content-between"
+                >
+                  <button
+                    class="btn"
+                    type="button"
+                    aria-label="Continue course"
+                  >
+                    Continue
+                  </button>
+                  <svg
+                    class="circle"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#e6e6e6"
+                      stroke-width="5"
+                    ></circle>
+                    <circle
+                      class="range"
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#fbd44b"
+                      stroke-width="5"
+                      stroke-dasharray="95, 1000"
+                      stroke-dashoffset="71.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="
+                        transform-origin: center;
+                        transform: rotate(-90deg);
+                      "
+                    ></circle>
+                    <text
+                      x="50%"
+                      y="50%"
+                      text-anchor="middle"
+                      dy="4"
+                      font-size="9"
+                      fill="#866a05"
+                      font-weight="400"
+                    >
+                      25%
+                    </text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="course-item swiper-slide">
+              <div class="course-item__image-block">
+                <img
+                  src="assets/image/course-item3.webp"
+                  alt="abstraction image"
+                  width="248"
+                  height="144"
+                  loading="lazy"
+                  srcset="
+                    assets/image/course-item3.webp    1x,
+                    assets/image/course-item3@2x.webp 2x
+                  "
+                />
+              </div>
+              <h3 class="course-item__title">Recognize Phishing Attack</h3>
+              <div class="wrapper">
+                <p class="course-item__description">
+                  Lorem ipsum dolor sit amet. Et cumque sunt aut repellat modi
+                  etaut repellat modi et
+                </p>
+                <div
+                  class="course-item__wrapper d-flex justify-content-between"
+                >
+                  <button
+                    class="btn"
+                    type="button"
+                    aria-label="Continue course"
+                  >
+                    Continue
+                  </button>
+                  <svg
+                    class="circle"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#e6e6e6"
+                      stroke-width="5"
+                    ></circle>
+                    <circle
+                      class="range"
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#fbd44b"
+                      stroke-width="5"
+                      stroke-dasharray="95, 1000"
+                      stroke-dashoffset="71.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="
+                        transform-origin: center;
+                        transform: rotate(-90deg);
+                      "
+                    ></circle>
+                    <text
+                      x="50%"
+                      y="50%"
+                      text-anchor="middle"
+                      dy="4"
+                      font-size="9"
+                      fill="#866a05"
+                      font-weight="400"
+                    >
+                      25%
+                    </text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="course-item swiper-slide">
+              <div class="course-item__image-block">
+                <img
+                  src="assets/image/course-item4.webp"
+                  alt="abstraction image"
+                  width="248"
+                  height="144"
+                  loading="lazy"
+                  srcset="
+                    assets/image/course-item4.webp    1x,
+                    assets/image/course-item4@2x.webp 2x
+                  "
+                />
+              </div>
+              <h3 class="course-item__title">Recognize Phishing Attack</h3>
+              <div class="wrapper">
+                <p class="course-item__description">
+                  Lorem ipsum dolor sit amet. Et cumque sunt aut repellat modi
+                  etaut repellat modi et
+                </p>
+                <div
+                  class="course-item__wrapper d-flex justify-content-between"
+                >
+                  <button
+                    class="btn"
+                    type="button"
+                    aria-label="Continue course"
+                  >
+                    Continue
+                  </button>
+                  <svg
+                    class="circle"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#e6e6e6"
+                      stroke-width="5"
+                    ></circle>
+                    <circle
+                      class="range"
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#fbd44b"
+                      stroke-width="5"
+                      stroke-dasharray="95, 1000"
+                      stroke-dashoffset="71.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="
+                        transform-origin: center;
+                        transform: rotate(-90deg);
+                      "
+                    ></circle>
+                    <text
+                      x="50%"
+                      y="50%"
+                      text-anchor="middle"
+                      dy="4"
+                      font-size="9"
+                      fill="#866a05"
+                      font-weight="400"
+                    >
+                      25%
+                    </text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="course-item swiper-slide">
+              <div class="course-item__image-block">
+                <img
+                  src="assets/image/course-item5.webp"
+                  alt="abstraction image"
+                  width="248"
+                  height="144"
+                  loading="lazy"
+                  srcset="
+                    assets/image/course-item5.webp    1x,
+                    assets/image/course-item5@2x.webp 2x
+                  "
+                />
+              </div>
+              <h3 class="course-item__title">Recognize Phishing Attack</h3>
+              <div class="wrapper">
+                <p class="course-item__description">
+                  Lorem ipsum dolor sit amet. Et cumque sunt aut repellat modi
+                  etaut repellat modi et
+                </p>
+                <div
+                  class="course-item__wrapper d-flex justify-content-between"
+                >
+                  <button
+                    class="btn"
+                    type="button"
+                    aria-label="Continue course"
+                  >
+                    Continue
+                  </button>
+                  <svg
+                    class="circle"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#e6e6e6"
+                      stroke-width="5"
+                    ></circle>
+                    <circle
+                      class="range"
+                      cx="20"
+                      cy="20"
+                      r="15"
+                      fill="none"
+                      stroke="#fbd44b"
+                      stroke-width="5"
+                      stroke-dasharray="95, 1000"
+                      stroke-dashoffset="71.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      style="
+                        transform-origin: center;
+                        transform: rotate(-90deg);
+                      "
+                    ></circle>
+                    <text
+                      x="50%"
+                      y="50%"
+                      text-anchor="middle"
+                      dy="4"
+                      font-size="9"
+                      fill="#866a05"
+                      font-weight="400"
+                    >
+                      25%
+                    </text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-arrow-wrap">
+          <div class="slider-button-prev">
+            <svg
+              width="12"
+              height="14"
+              viewBox="0 0 12 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.597419 5.6805C0.663339 5.61283 0.912243 5.3235 1.1441 5.0855C2.50341 3.58867 6.04944 1.13867 7.90542 0.390833C8.18729 0.270667 8.8999 0.0163333 9.28065 0C9.64548 0 9.99326 0.084 10.3251 0.254333C10.7388 0.492333 11.0707 0.866833 11.2526 1.309C11.3696 1.61583 11.5515 2.534 11.5515 2.55033C11.7333 3.55483 11.8333 5.187 11.8333 6.99067C11.8333 8.70917 11.7333 10.2748 11.5844 11.2945C11.5674 11.3108 11.3855 12.4518 11.1866 12.8427C10.8218 13.5567 10.1092 14 9.34657 14H9.28065C8.78398 13.9825 7.73949 13.5392 7.73949 13.5228C5.98352 12.7738 2.51932 10.444 1.12705 8.89583C1.12705 8.89583 0.734941 8.498 0.564459 8.2495C0.298507 7.8925 0.166667 7.45033 0.166667 7.00817C0.166667 6.51467 0.315555 6.055 0.597419 5.6805Z"
+                fill="#866A05"
+              />
+            </svg>
+          </div>
+          <div class="slider-button-next">
+            <svg
+              width="12"
+              height="14"
+              viewBox="0 0 12 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.4026 5.6805C11.3367 5.61283 11.0878 5.3235 10.8559 5.0855C9.49663 3.58867 5.9506 1.13867 4.09462 0.390833C3.81275 0.270667 3.10014 0.0163333 2.71939 0C2.35456 0 2.00678 0.084 1.67491 0.254333C1.2612 0.492333 0.929331 0.866833 0.747483 1.309C0.630419 1.61583 0.448571 2.534 0.448571 2.55033C0.266724 3.55483 0.166706 5.187 0.166706 6.99067C0.166706 8.70917 0.266723 10.2748 0.415611 11.2945C0.432659 11.3108 0.614507 12.4518 0.813402 12.8427C1.17823 13.5567 1.89085 14 2.65347 14H2.71939C3.21607 13.9825 4.26055 13.5392 4.26055 13.5228C6.01652 12.7738 9.48072 10.444 10.873 8.89583C10.873 8.89583 11.2651 8.498 11.4356 8.2495C11.7015 7.8925 11.8334 7.45033 11.8334 7.00817C11.8334 6.51467 11.6845 6.055 11.4026 5.6805Z"
+                fill="#866A05"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="main-botoom-section">
+        <div class="top-courses">
+          <div class="d-flex justify-content-between">
+            <h2 class="headline">Top Courses</h2>
+            <a href="#" class="top-courses__see-all">See All</a>
+          </div>
+          <ol class="top-courses__list">
+            <li class="item">
+              <span class="item__number">1</span>
+              <div class="wrapper">
+                <img
+                  src="assets/image/item-course1.webp"
+                  alt="abstraction image"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                  srcset="
+                    assets/image/item-course1.webp    1x,
+                    assets/image/item-course1@2x.webp 2x
+                  "
+                />
+                <div class="item__description d-flex flex-column">
+                  <span class="name">Recognize Phishing Attack</span>
+                  <span class="text"
+                    >Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                  </span>
+                </div>
+              </div>
+              <div class="item__count">
+                <span class="number">120k</span>
+                <span>Participants</span>
+              </div>
+              <button class="btn" type="button" aria-label="open course">
+                Start
+              </button>
+            </li>
+            <li class="item">
+              <span class="item__number">2</span>
+              <div class="wrapper">
+                <img
+                  src="assets/image/item-course2.webp"
+                  alt="abstraction image"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                  srcset="
+                    assets/image/item-course2.webp    1x,
+                    assets/image/item-course2@2x.webp 2x
+                  "
+                />
+                <div class="item__description d-flex flex-column">
+                  <span class="name">Recognize Phishing Attack</span>
+                  <span class="text"
+                    >Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                  </span>
+                </div>
+              </div>
+              <div class="item__count">
+                <span class="number">120k</span>
+                <span>Participants</span>
+              </div>
+              <button class="btn" type="button" aria-label="open course">
+                Start
+              </button>
+            </li>
+            <li class="item">
+              <span class="item__number">3</span>
+              <div class="wrapper">
+                <img
+                  src="assets/image/item-course3.webp"
+                  alt="abstraction image"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                  srcset="
+                    assets/image/item-course3.webp    1x,
+                    assets/image/item-course3@2x.webp 2x
+                  "
+                />
+                <div class="item__description d-flex flex-column">
+                  <span class="name">Recognize Phishing Attack</span>
+                  <span class="text"
+                    >Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                  </span>
+                </div>
+              </div>
+              <div class="item__count">
+                <span class="number">120k</span>
+                <span>Participants</span>
+              </div>
+              <button class="btn" type="button" aria-label="open course">
+                Start
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="graph">
+          <h2 class="headline">Learning Curve</h2>
+          <p class="graph__description">Hours spent learning per day</p>
+          <canvas id="myChart"></canvas>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
